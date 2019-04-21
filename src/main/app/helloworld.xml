@@ -10,5 +10,7 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
     <flow name="helloworldFlow">
         <http:listener config-ref="HTTP_Listener_Configuration" path="/helloTest" doc:name="HTTP"/>
         <set-payload value="#['Hi Welcome to MuleSoft']" doc:name="Set Payload"/>
+        <logger message="ssssss" level="INFO" doc:name="Logger"/>
+        <logger message="hhhhhhhh" level="INFO" doc:name="Logger"/>
     </flow>
 </mule>
